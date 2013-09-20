@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/exit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/twoPl"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/twoPl"
+        android:layout_marginBottom="24dp"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/twoPl"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Start game" />
+
+    <TextView
+        android:id="@+id/tvOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Choose mode"
+        android:textSize="28dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp" >
+
+        <RadioButton
+            android:id="@+id/RadioButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Player1" />
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-easy" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-medium" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-hard-1" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-hard-2" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:layout_marginRight="16dp" >
+
+        <RadioButton
+            android:id="@+id/RadioButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Player2" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-easy" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-medium" />
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-hard-1" />
+
+        <RadioButton
+            android:id="@+id/RadioButton03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot-hard-2" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOut"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/twoPl"
+        android:text="White"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/twoPl"
+        android:text="Black"
+        android:textSize="24sp" />
+
+</RelativeLayout>
